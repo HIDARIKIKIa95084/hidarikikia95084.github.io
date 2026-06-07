@@ -2,7 +2,7 @@
   "name": "みずほ銀行",
   "short_name": "みずほ銀行",
   "description": "みずほ銀行アプリ",
-  "start_url": "./mizuho_app.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000066",
   "theme_color": "#000066",

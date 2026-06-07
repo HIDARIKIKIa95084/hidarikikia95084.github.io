@@ -1,6 +1,6 @@
 const CACHE_NAME = 'mizuho-v1';
 const LOCAL_FILES = [
-  './mizuho_app.html',
+  './index.html',
   './icon.png',
   './manifest.json'
 ];
@@ -40,7 +40,7 @@ self.addEventListener('fetch', e => {
         // 取得できたらキャッシュに保存
         caches.open(CACHE_NAME).then(cache => cache.put(e.request, res.clone()));
         return res;
-      }).catch(() => caches.match('./mizuho_app.html'));
+      }).catch(() => caches.match('./index.html'));
     })
   );
 });
